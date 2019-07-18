@@ -14,18 +14,20 @@
     <platform>all</platform>
     <language></language>
     <summary lang="en">The Hartmann Report</summary>
-    <description lang="en">The Hartmann Report from Thom Hartmann</license>
+    <description lang="en">The Hartmann Report from Thom Hartmann</description>
+    <license>The MIT License (MIT)</license>
+    <forum></forum></license>
     <forum></forum>
     <email>leopheard@gmail.com</email>
     <source>https://github.com/leopheard/thehartmannreport.git</source>
     <website>https://hartmannreport.com/</website>
     <audio_guide></audio_guide>
         	<assets>
-			<icon>resources/media/icon.jpeg</icon>
-			<fanart>resources/media/fanart.jpeg</fanart>
-			<screenshot>resources/media/RRAH.jpg</screenshot>
-			<screenshot>resources/media/SMHH.jpg</screenshot>
-			<screenshot>resources/media/icon.jpeg</screenshot>
+			<icon>resources/media/icon.jpg</icon>
+			<fanart>resources/media/fanart.png</fanart>
+			<screenshot>resources/media/icon1.png</screenshot>
+			<screenshot>resources/media/fanart.png</screenshot>
+			<screenshot>resources/media/icon1.png</screenshot>
 		</assets>
   </extension>
 </addon>
