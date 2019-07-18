@@ -15,7 +15,7 @@ def main_menu():
     """
     items = [
         {
-            'label': plugin.get_string(10000), 
+            'label': plugin.get_string(30010), 
             'path': "http://stream1.thomhartmann.com/hartmannfp",
             'thumbnail': "https://pbs.twimg.com/profile_images/1284920980/thom-2011-150_400x400.jpg", 
             'is_playable': True},
@@ -24,7 +24,7 @@ def main_menu():
             'path': plugin.url_for('all_episodes1'),
             'thumbnail': "https://cdn3.thomhartmann.com/sites/default/files/thom%20and%20logo_13.jpg"},
  {
-            'label': plugin.get_string(3000), 
+            'label': plugin.get_string(30000), 
             'path': plugin.url_for('all_episodes'),
             'thumbnail': "https://cdn3.thomhartmann.com/sites/default/files/thom%20and%20logo_13.jpg"},
     ]
