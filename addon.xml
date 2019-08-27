@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.audio.thehartmannreport" name="The Hartmann Report" version="1.0.0" provider-name="leopheard">
+<addon id="plugin.audio.thehartmannreport" name="The Hartmann Report" version="1.1.0" provider-name="leopheard">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="xbmc.python" version="2.26.0"/>
     <import addon="script.module.xbmcswift2" version="2.4.0"/>
     <import addon="script.module.beautifulsoup4" version="4.3.1"/>
     <import addon="script.module.requests" version="1.1.0"/>
@@ -18,9 +18,8 @@
     <license>The MIT License (MIT)</license>
     <forum></forum>
     <email>leopheard@gmail.com</email>
-    <source>https://github.com/leopheard/thehartmannreport.git</source>
+    <source>https://github.com/leopheard/TheHartmannReport</source>
     <website>https://hartmannreport.com/</website>
-    <audio_guide></audio_guide>
         	<assets>
 			<icon>resources/media/icon.jpg</icon>
 			<fanart>resources/media/fanart.png</fanart>
