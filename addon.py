@@ -2,15 +2,11 @@ from xbmcswift2 import Plugin, xbmcgui
 from resources.lib import mainaddon
 
 plugin = Plugin()
-
 URL1 = "https://rss.art19.com/the-hartmann-report"  #HartmannReport
 URL2 = "http://stream1.thomhartmann.com/hartmannfp"  #live
 
 @plugin.route('/')
 def main_menu():
-    """
-    main menu 
-    """
     items = [
         {
             'label': plugin.get_string(30010), 
@@ -30,9 +26,6 @@ def main_menu():
 
 @plugin.route('/all_episodes/')
 def all_episodes():
-    """
-    contains playable podcasts listed as just-in
-    """
     soup1 = mainaddon.get_soup(URL1)
     playable_podcast = mainaddon.get_playable_podcast(soup1)
     items = mainaddon.compile_playable_podcast(playable_podcast)
@@ -40,9 +33,6 @@ def all_episodes():
 
 @plugin.route('/all_episodes1/')
 def all_episodes1():
-    """
-    contains playable podcasts listed as just-in
-    """
     soup1 = mainaddon.get_soup1(URL1)
     playable_podcast1 = mainaddon.get_playable_podcast1(soup1)
     items = mainaddon.compile_playable_podcast1(playable_podcast1)

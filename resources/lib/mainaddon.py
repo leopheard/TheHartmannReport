@@ -3,50 +3,34 @@ import re
 from bs4 import BeautifulSoup
 
 def get_soup1(URL1):
-    """
-    @param: URL of site to be scraped
-    """
     page = requests.get(URL1)
     soup1 = BeautifulSoup(page.text, 'html.parser')
-    print "type: ", type(soup1)
+    print("type: ", type(soup1))
     return soup1
 get_soup1("https://rss.art19.com/the-hartmann-report")
 
 def get_soup2(URL2):
-    """
-    @param: URL of site to be scraped
-    """
     page = requests.get(URL2)
     soup2 = BeautifulSoup(page.text, 'html.parser')
-    print "type: ", type(soup2)
+    print("type: ", type(soup2))
     return soup2
 get_soup2("http://stream1.thomhartmann.com/hartmannfp")
 
-
 def get_playable_podcast(soup1):
-    """
-    @param: parsed html page            
-    """
     subjects = []
-
     for content in soup1.find_all('item'):
         try:        
             link = content.find('enclosure')
             link = link.get('url')
-            print "\n\nLink: ", link
-
+            print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
-
 #            desc = content.find('description')
 #            desc = desc.get_text()
-
 #            thumbnail = content.find('itunes:image')
 #            thumbnail = thumbnail.get('href')
-
         except AttributeError:
             continue
-              
         item = {
                 'url': link,
                 'title': title,
@@ -56,13 +40,8 @@ def get_playable_podcast(soup1):
         subjects.append(item) 
     return subjects
 
-
 def compile_playable_podcast(playable_podcast):
-    """
-    @para: list containing dict of key/values pairs for playable podcasts
-    """
     items = []
-
     for podcast in playable_podcast:
         items.append({
             'label': podcast['title'],
@@ -73,29 +52,21 @@ def compile_playable_podcast(playable_podcast):
     })
     return items
 
-
 def get_playable_podcast1(soup1):
-    """
-    @param: parsed html page            
-    """
     subjects = []
-    for content in soup1.find_all('item', limit=6):
+    for content in soup1.find_all('item', limit=9):
         try:        
             link = content.find('enclosure')
             link = link.get('url')
-            print "\n\nLink: ", link
-
+            print("\n\nLink: ", link)
             title = content.find('title')
             title = title.get_text()
-
 #            desc = content.find('description')
 #            desc = desc.get_text()
-
 #            thumbnail = content.find('itunes:image')
 #            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
-             
         item = {
                 'url': link,
                 'title': title,
@@ -106,11 +77,7 @@ def get_playable_podcast1(soup1):
     return subjects
 
 def compile_playable_podcast1(playable_podcast1):
-    """
-    @para: list containing dict of key/values pairs for playable podcasts
-    """
     items = []
-
     for podcast in playable_podcast1:
         items.append({
             'label': podcast['title'],
@@ -119,5 +86,4 @@ def compile_playable_podcast1(playable_podcast1):
 #            'info': podcast['desc'],
             'is_playable': True,
     })
-
     return items
