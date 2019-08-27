@@ -14,7 +14,7 @@
     <platform>all</platform>
     <language></language>
     <summary lang="en">The Hartmann Report</summary>
-    <description lang="en">The Hartmann Report from Thom Hartmann</description>
+    <description lang="en">The Hartmann Report is an independent daily podcast hosted by award winning, author, radio, TV host Thom Hartmann. Thom’s podcast highlights the bigger picture behind politics, science and culture through discussion and debate. Catch Thom’s live show Monday through Friday noon ET / 9am PT</description>
     <license>The MIT License (MIT)</license>
     <forum></forum>
     <email>leopheard@gmail.com</email>
@@ -24,7 +24,7 @@
 			<icon>resources/media/icon.jpg</icon>
 			<fanart>resources/media/fanart.png</fanart>
 			<screenshot>resources/media/icon1.png</screenshot>
-			<screenshot>resources/media/fanart.png</screenshot>
+			<screenshot>resources/media/icon.jpg</screenshot>
 			<screenshot>resources/media/icon1.png</screenshot>
 		</assets>
   </extension>
