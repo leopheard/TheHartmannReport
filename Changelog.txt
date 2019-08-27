@@ -3,3 +3,4 @@ __Version 1.0.0__
 
 __Version 1.1.0__
 1. Removed incorrect BS soup2 link
+2. Fixed images

@@ -20,8 +20,8 @@ def get_playable_podcast(soup1):
             title = title.get_text()
 #            desc = content.find('description')
 #            desc = desc.get_text()
-#            thumbnail = content.find('itunes:image')
-#            thumbnail = thumbnail.get('href')
+            thumbnail = content.find('itunes:image')
+            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
@@ -56,8 +56,8 @@ def get_playable_podcast1(soup1):
             title = title.get_text()
 #            desc = content.find('description')
 #            desc = desc.get_text()
-#            thumbnail = content.find('itunes:image')
-#            thumbnail = thumbnail.get('href')
+            thumbnail = content.find('itunes:image')
+            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {

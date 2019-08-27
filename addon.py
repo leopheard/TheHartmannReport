@@ -11,16 +11,16 @@ def main_menu():
         {
             'label': plugin.get_string(30010), 
             'path': "http://stream1.thomhartmann.com/hartmannfp",
-            'thumbnail': "/home/osmc/.kodi/addons/plugin.audio.NPRpodcasts/resources/media/icon.jpg", 
+            'thumbnail': "https://cdn-radiotime-logos.tunein.com/s184220q.png", 
             'is_playable': True},
         {
             'label': plugin.get_string(30001), 
             'path': plugin.url_for('all_episodes1'),
-            'thumbnail': "/home/osmc/.kodi/addons/plugin.audio.NPRpodcasts/resources/media/logo.jpg"},
+            'thumbnail': "https://content.production.cdn.art19.com/images/9d/86/34/c6/9d8634c6-dbca-4368-9f95-c55922195f83/460c595b8fa9ce2d24d5328a274e187c8f7ba039adc9f7b404d921e9b32092c373be11d84bde5be717e7412f277594a791eb73f996a1702e045c5fbf3b9477bd.jpeg"},
  {
             'label': plugin.get_string(30000), 
             'path': plugin.url_for('all_episodes'),
-            'thumbnail': "/home/osmc/.kodi/addons/plugin.audio.NPRpodcasts/resources/media/logo.jpg"},
+            'thumbnail': "https://content.production.cdn.art19.com/images/9d/86/34/c6/9d8634c6-dbca-4368-9f95-c55922195f83/460c595b8fa9ce2d24d5328a274e187c8f7ba039adc9f7b404d921e9b32092c373be11d84bde5be717e7412f277594a791eb73f996a1702e045c5fbf3b9477bd.jpeg"},
     ]
     return items
 
