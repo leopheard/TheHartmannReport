@@ -9,13 +9,6 @@ def get_soup1(URL1):
     return soup1
 get_soup1("https://rss.art19.com/the-hartmann-report")
 
-def get_soup2(URL2):
-    page = requests.get(URL2)
-    soup2 = BeautifulSoup(page.text, 'html.parser')
-    print("type: ", type(soup2))
-    return soup2
-get_soup2("http://stream1.thomhartmann.com/hartmannfp")
-
 def get_playable_podcast(soup1):
     subjects = []
     for content in soup1.find_all('item'):
