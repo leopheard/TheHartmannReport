@@ -99,15 +99,15 @@ def get_playable_podcast3(soup3):
             title = title.get_text()
 #            desc = content.find('description')
 #            desc = desc.get_text()
-            thumbnail = content.find('itunes:image')
-            thumbnail = thumbnail.get('href')
+#            thumbnail = content.find('itunes:image')
+#            thumbnail = thumbnail.get('href')
         except AttributeError:
             continue
         item = {
                 'url': link,
                 'title': title,
 #                'desc': desc,
-                'thumbnail': thumbnail,
+                'thumbnail': "https://hartmannreport.com/sites/all/themes/hr_theme/images/largelogo.png",
         }
         subjects.append(item) 
     return subjects
@@ -122,4 +122,3 @@ def compile_playable_podcast3(playable_podcast3):
             'is_playable': True,
     })
     return items
-

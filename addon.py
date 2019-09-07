@@ -4,7 +4,7 @@ from resources.lib import mainaddon
 plugin = Plugin()
 URL1 = "https://rss.art19.com/the-hartmann-report"  #HartmannReport
 URL2 = "http://stream1.thomhartmann.com/hartmannfp"  #live
-URL3 = "https://www.thomhartmann.com/podcasts.xml?token=8n5cpef8kchye42urmk7hpmpfa3oeeng" #TH HOUR
+URL3 = "https://www.thomhartmann.com/podcasts.xml?token=8n5cpef8kchye42urmk7hpmpfa3oeeng" #THHOUR
 
 @plugin.route('/')
 def main_menu():
@@ -25,7 +25,7 @@ def main_menu():
  {
             'label': plugin.get_string(30003), 
             'path': plugin.url_for('all_episodes3'),
-            'thumbnail': "https://content.production.cdn.art19.com/images/9d/86/34/c6/9d8634c6-dbca-4368-9f95-c55922195f83/460c595b8fa9ce2d24d5328a274e187c8f7ba039adc9f7b404d921e9b32092c373be11d84bde5be717e7412f277594a791eb73f996a1702e045c5fbf3b9477bd.jpeg"},
+            'thumbnail': "https://hartmannreport.com/sites/all/themes/hr_theme/images/largelogo.png"},
 
     ]
     return items
