@@ -19,11 +19,15 @@ msgid "Thom Hartmann - live stream"
 msgstr ""
 
 msgctxt "#30000"
-msgid "All episodes"
+msgid "All Hartman Report episodes"
 msgstr ""
 
 msgctxt "#30001"
-msgid "Latest episodes"
+msgid "Latest Hartman Report episodes"
+msgstr ""
+
+msgctxt "#30003"
+msgid "Thom Hartman Hour episodes"
 msgstr ""
 
 # empty string with id 32003
