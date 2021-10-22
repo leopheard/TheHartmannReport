@@ -26,7 +26,6 @@ def main_menu():
             'label': plugin.get_string(30003), 
             'path': plugin.url_for('all_episodes3'),
             'thumbnail': "https://hartmannreport.com/sites/all/themes/hr_theme/images/largelogo.png"},
-
     ]
     return items
 
